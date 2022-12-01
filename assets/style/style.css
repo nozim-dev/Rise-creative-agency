@@ -1,0 +1,1668 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: #f3f4f6;
+}
+
+@font-face {
+  font-family: "ITC Avant Garde Gothic Std";
+  src: url("../font/itc-avant-garde-gothic-std-book_0tnVZ/ITC Avant Garde Gothic Std Book.otf");
+}
+body {
+  background-color: #101c26;
+}
+body .container {
+  margin: auto;
+  position: relative;
+}
+body .container header {
+  width: 100%;
+  padding: 32px 6%;
+  padding: 10px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+body .container header .headerLogo {
+  border: inherit;
+  width: 97px;
+  height: 67px;
+}
+body .container header .headerLogo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .container header nav {
+  border: inherit;
+  margin-left: 100px;
+}
+body .container header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+body .container header nav ul li a {
+  text-decoration: none;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #bab9b9;
+  transition: all 0.4s;
+  position: relative;
+}
+body .container header nav ul li a:hover {
+  color: #ffffff;
+}
+body .container header nav ul li a::before {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: #f0e714;
+  position: absolute;
+  top: 250%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+body .container header nav ul li a:hover::before {
+  top: 150%;
+  opacity: 1;
+}
+body .container header .header_authBlock {
+  border: inherit;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+body .container header .header_authBlock .header_authBlock_item:nth-of-type(1) {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #cecece;
+  padding: 13px 32px;
+  border: 1px solid #cecece;
+  border-radius: 100px;
+  background-color: transparent;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body .container header .header_authBlock .header_authBlock_item:nth-of-type(1):hover {
+  background-color: #cecece;
+  color: #101c26;
+}
+body .container header .header_authBlock .header_authBlock_item:nth-of-type(2) {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101c26;
+  background: #f0e714;
+  border-color: #f0e714;
+  border-style: solid;
+  border-radius: 1000px;
+  padding: 13px 39px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body .container header .header_authBlock .header_authBlock_item:nth-of-type(2):hover {
+  background-color: #101c26;
+  color: #f0e714;
+}
+@media screen and (max-width: 1036px) {
+  body .container header nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 456px) {
+  body .container header .headerLogo {
+    width: 66px;
+    height: 46px;
+  }
+  body .container header .header_authBlock .header_authBlock_item:nth-of-type(1) {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  body .container header .header_authBlock .header_authBlock_item:nth-of-type(2) {
+    font-size: 15px;
+    padding: 0 13px;
+  }
+}
+body .container main {
+  border: inherit;
+  width: 100%;
+}
+body .container main .section_one {
+  width: 100%;
+  padding-top: 166px;
+  padding-left: 6%;
+  padding-bottom: 64px;
+  background: url("../image/Baground.png") no-repeat;
+  background-size: 100% 150%;
+  background-color: #101c26;
+  position: relative;
+}
+body .container main .section_one .section_one_item_top {
+  border: inherit;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 74px;
+}
+body .container main .section_one .section_one_item_top .section_one_item {
+  width: 100%;
+  border: inherit;
+}
+body .container main .section_one .section_one_item_top .section_one_item:nth-of-type(1) {
+  margin-top: 50px;
+}
+body .container main .section_one .section_one_item_top .section_one_item h1 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  letter-spacing: 0.01em;
+  color: #f3f4f6;
+}
+body .container main .section_one .section_one_item_top .section_one_item p {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.011em;
+  color: #f3f4f6;
+  margin-top: 24px;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started {
+  border: inherit;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1) {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #24272e;
+  background: #f0e714;
+  border: 1.5px solid #f0e714;
+  border-radius: 100px;
+  padding: 18px 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1) span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1) span svg path {
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1):hover {
+  background-color: #24272e;
+  color: #f0e714;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1):hover span svg path {
+  fill: #f0e714;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2) {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2) span {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f0e714;
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2) span svg path {
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2):hover {
+  color: #f0e714;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2):hover span {
+  background-color: transparent;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2):hover span svg path {
+  fill: #f0e714;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores {
+  width: 80%;
+  border: inherit;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores .section_one_item_scores_child h2 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  color: #f0e714;
+}
+body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores .section_one_item_scores_child p {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+body .container main .section_one .section_one_item_top .section_one_item img {
+  width: 100%;
+  height: 100%;
+}
+body .container main .section_one .section_one_item_bottom {
+  border: inherit;
+  margin-top: 94px;
+  margin-right: 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container main .section_one::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 704px;
+  top: 134px;
+  background: #edb32d;
+}
+body .container main .section_one::before {
+  content: "";
+  background: url("../image/Star.png") no-repeat;
+  border: inherit;
+  background-position: cover;
+  position: absolute;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  left: 544px;
+  top: 368px;
+}
+body .container main .section_one .section_one_item_2 {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px 16px;
+  max-width: 202px;
+  max-height: 235px;
+  position: absolute;
+  top: 47%;
+  left: 40%;
+}
+body .container main .section_one .section_one_item_2 p {
+  display: inline-block;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.011em;
+  color: #101c26;
+  background: rgba(240, 231, 20, 0.5);
+  border-radius: 32px;
+  padding: 2px 8px;
+}
+body .container main .section_one .section_one_item_2 h6 {
+  margin-top: 18px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.011em;
+  color: #24272e;
+}
+body .container main .section_one .section_one_item_2 img {
+  margin-top: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75px;
+  width: 100%;
+}
+body .container main .section_one .section_one_item_2 .section_one_item_child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container main .section_one .section_one_item_2 .section_one_item_child a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.011em;
+  color: #24272e;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 2px 7px;
+  transition: all 0.4s;
+}
+body .container main .section_one .section_one_item_2 .section_one_item_child a:nth-of-type(4) {
+  background: #f7f289;
+}
+body .container main .section_one .section_one_item_2 .section_one_item_child a:hover {
+  background: #f7f289;
+}
+body .container main .section_two {
+  background: #f3f4f6;
+  display: grid;
+  gap: 140px;
+  padding: 140px 6%;
+}
+body .container main .section_two .section_two_item {
+  border: inherit;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child h2 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  color: #24272e;
+  margin-top: 116px;
+  position: relative;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child h2::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child h2:before {
+  content: "About us";
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child p {
+  margin-top: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555c68;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button {
+  margin-top: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #f0e714;
+  border: 2px solid #24272e;
+  background: #24272e;
+  padding: 14px 33px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button span svg path {
+  transition: all 0.4s;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button:hover {
+  background-color: #f0e714;
+  color: #24272e;
+}
+body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button:hover span svg path {
+  fill: #24272e;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child h2 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 56px;
+  color: #24272e;
+  position: relative;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child h2::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child p {
+  margin-top: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #555c68;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child .section_two_item_child_block {
+  margin-top: 40px;
+  display: grid;
+  gap: 24px;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child .section_two_item_child_block .section_two_item_child_block_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  border: inherit;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child .section_two_item_child_block .section_two_item_child_block_item span {
+  background: #24272e;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child .section_two_item_child_block .section_two_item_child_block_item .section_two_item_child_block_item_title h3 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.011em;
+  color: #24272e;
+  margin: 0;
+}
+body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child .section_two_item_child_block .section_two_item_child_block_item .section_two_item_child_block_item_title p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555c68;
+  margin: 0;
+  margin-top: 2px;
+}
+body .container main .section_three {
+  padding: 68px 6% 140px;
+  background: #f3f4f6;
+}
+body .container main .section_three h1 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  text-align: center;
+  color: #24272e;
+  position: relative;
+}
+body .container main .section_three h1::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_three h1:before {
+  content: "our searvices";
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+body .container main .section_three p {
+  width: 53%;
+  margin: auto;
+  margin-top: 16px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #555c68;
+}
+body .container main .section_three .section_three_row {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+body .container main .section_three .section_three_row .section_three_row_col {
+  border: inherit;
+  text-align: left;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all 0.4s;
+  padding: 30px;
+}
+body .container main .section_three .section_three_row .section_three_row_col span {
+  width: 58px;
+  height: 58px;
+  background: #24272e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main .section_three .section_three_row .section_three_row_col h3 {
+  margin-top: 24px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #24272e;
+}
+body .container main .section_three .section_three_row .section_three_row_col p {
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.011em;
+  color: #555c68;
+  margin-top: 12px;
+  text-align: left;
+}
+body .container main .section_three .section_three_row .section_three_row_col:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 30px 50px -10px rgba(152, 151, 151, 0.37);
+}
+body .container main .section_four {
+  padding: 0 6% 140px;
+  background: #f3f4f6;
+}
+body .container main .section_four .section_four_item {
+  border: inherit;
+}
+body .container main .section_four .section_four_item:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child {
+  border: inherit;
+}
+body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  color: #24272e;
+  margin-top: 68px;
+  position: relative;
+}
+body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1::before {
+  content: "Ready To Use";
+  top: -60%;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) {
+  margin-top: 58px;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 510px);
+  gap: 30px;
+}
+body .container main .section_four .section_four_item:nth-of-type(2)::-webkit-scrollbar {
+  width: 1em;
+}
+body .container main .section_four .section_four_item:nth-of-type(2)::-webkit-scrollbar-track {
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body .container main .section_four .section_four_item:nth-of-type(2)::-webkit-scrollbar-thumb {
+  background-color: #24272e;
+  outline: 1px solid #f0e714;
+  border-radius: 8px;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child {
+  padding-bottom: 20px;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child .section_four_item_child_image {
+  background-color: #24272e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child h3 {
+  margin-top: 40px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 28px;
+  color: #24272e;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555c68;
+}
+body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child a {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #24272e;
+  margin-top: 16px;
+  text-decoration: none;
+}
+body .container main .section_five {
+  padding: 140px 0;
+  background: #f3f4f6;
+}
+body .container main .section_five h1 {
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 56px;
+  color: #24272e;
+  text-align: center;
+  position: relative;
+}
+body .container main .section_five h1::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_five h1:before {
+  content: "TESTIMONIAL";
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+body .container main .section_five p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 16px;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #555c68;
+}
+body .container main .section_five .section_five_row {
+  width: 100%;
+  margin-top: 80px;
+  border: inherit;
+  display: grid;
+  grid-template-columns: repeat(3, 576px);
+  align-items: center;
+  overflow-x: scroll;
+  padding-bottom: 100px;
+  padding-top: 34px;
+  gap: 30px;
+}
+body .container main .section_five .section_five_row::-webkit-scrollbar {
+  width: 1em;
+}
+body .container main .section_five .section_five_row::-webkit-scrollbar-track {
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body .container main .section_five .section_five_row::-webkit-scrollbar-thumb {
+  background-color: #24272e;
+  outline: 1px solid #f0e714;
+  border-radius: 8px;
+}
+body .container main .section_five .section_five_row .section_five_row_col {
+  background: #ffffff;
+  box-shadow: 0px 25px 32px rgba(67, 67, 67, 0.14);
+  border-radius: 10px;
+  padding: 32px 60px;
+  height: 338px;
+  text-align: center;
+}
+body .container main .section_five .section_five_row .section_five_row_col img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+body .container main .section_five .section_five_row .section_five_row_col h4 {
+  margin-top: 16px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+body .container main .section_five .section_five_row .section_five_row_col h6 {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8791a0;
+}
+body .container main .section_five .section_five_row .section_five_row_col span {
+  margin-top: 10px;
+  display: block;
+}
+body .container main .section_five .section_five_row .section_five_row_col p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.011em;
+  color: #555c68;
+}
+body .container main .section_five .section_five_row .section_five_row_col:nth-of-type(2) {
+  width: 568px;
+  height: 406px;
+}
+body .container main .section_six {
+  border: inherit;
+  background-color: #fff;
+  padding: 100px 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+body .container main .section_six .section_six_item:first-of-type h1 {
+  margin-top: 126px;
+  font-family: "ITC Avant Garde Gothic Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  color: #010101;
+  position: relative;
+}
+body .container main .section_six .section_six_item:first-of-type h1::before {
+  content: "Why choose us";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #24272e;
+  background: rgba(240, 231, 20, 0.2);
+  border-radius: 1000px;
+  padding: 10px 16px;
+}
+body .container main .section_six .section_six_item:first-of-type h1::before {
+  content: "OUR CONTACTS";
+  top: -80%;
+}
+body .container main .section_six .section_six_item:first-of-type p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: #555c68;
+  margin-top: 16px;
+}
+body .container main .section_six .section_six_item:first-of-type a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555c68;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+body .container main .section_six .section_six_item:first-of-type a span {
+  display: flex;
+  align-items: center;
+}
+body .container main .section_six .section_six_item:last-of-type {
+  background: #101c26;
+  border-radius: 10px;
+  padding: 60px 140px 60px 80px;
+}
+body .container main .section_six .section_six_item:last-of-type form {
+  width: 100%;
+  display: grid;
+  gap: 14px;
+}
+body .container main .section_six .section_six_item:last-of-type form input {
+  padding: 10px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border-bottom: 1.5px solid gray;
+  position: relative;
+}
+body .container main .section_six .section_six_item:last-of-type form input::-moz-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d3d3d3;
+  position: absolute;
+  top: 40%;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+body .container main .section_six .section_six_item:last-of-type form input:-ms-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d3d3d3;
+  position: absolute;
+  top: 40%;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+body .container main .section_six .section_six_item:last-of-type form input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d3d3d3;
+  position: absolute;
+  top: 40%;
+  transition: all 0.4s;
+}
+body .container main .section_six .section_six_item:last-of-type form input:focus::-moz-placeholder {
+  top: -7%;
+}
+body .container main .section_six .section_six_item:last-of-type form input:focus:-ms-input-placeholder {
+  top: -7%;
+}
+body .container main .section_six .section_six_item:last-of-type form input:focus::placeholder {
+  top: -7%;
+}
+body .container main .section_six .section_six_item:last-of-type form input:focus {
+  border-bottom: 1.5px solid #fff;
+}
+body .container main .section_six .section_six_item:last-of-type form button {
+  display: inline-block;
+  padding: 13px 60px;
+  max-width: 180px;
+  margin-top: 64px;
+  background: #f0e714;
+  border-radius: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #101c26;
+  cursor: pointer;
+  border: 1.5px solid #f0e714;
+  transition: all 0.4s;
+}
+body .container main .section_six .section_six_item:last-of-type form button:hover {
+  background-color: #101c26;
+  color: #f0e714;
+}
+@media screen and (max-width: 1300px) {
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) .section_two_item_child_block .section_two_item_child_block_item span {
+    border: 2px solid red;
+    min-width: 68px;
+    min-height: 68px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  body .container main .section_one .section_one_item_top .section_one_item h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores .section_one_item_scores_child h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2::before {
+    top: -80%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) .section_two_item_child_block .section_two_item_child_block_item span {
+    border: 2px solid red;
+    min-width: 68px;
+    min-height: 68px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  body .container main .section_three .section_three_row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1094px) {
+  body .container main .section_two .section_two_item:nth-of-type(1) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child button {
+    margin: auto;
+    margin-top: 40px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(1) {
+    order: 2;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) {
+    order: 1;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2:before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) {
+    margin: auto;
+    text-align: center;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2:before {
+    left: 50%;
+    transform: translate(-50%, 70%);
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(2) {
+    width: 100%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1066px) {
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1) {
+    padding: 18px 20px;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores {
+    width: 100%;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores .section_one_item_scores_child h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_one .section_one_item_2 {
+    top: 47%;
+    left: 70%;
+  }
+  body .container main .section_one .section_one_item_bottom {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+  body .container main .section_one .section_one_item_bottom img {
+    width: 100%;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (max-width: 930px) {
+  body .container main .section_one .section_one_item_top {
+    grid-template-columns: 1fr;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item {
+    text-align: center;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started {
+    justify-content: center;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores {
+    width: 50%;
+    margin: auto;
+    margin-top: 45px;
+  }
+  body .container main .section_one .section_one_item_2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  body .container main .section_one .section_one_item_bottom {
+    margin-top: 30px;
+  }
+  body .container main .section_six .section_six_item:first-of-type h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  body .container main .section_six .section_six_item:first-of-type h1::before {
+    font-size: 12px;
+  }
+  body .container main .section_six .section_six_item:last-of-type {
+    padding: 60px 60px 60px 40px;
+  }
+}
+@media screen and (max-width: 845px) {
+  body .container main .section_three p {
+    width: 80%;
+  }
+  body .container main .section_three .section_three_row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 720px) {
+  body .container main .section_one::after {
+    left: 73px;
+  }
+  body .container main .section_one::before {
+    left: 73px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body .container main .section_six .section_six_item:first-of-type h1 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 50px;
+  }
+  body .container main .section_six .section_six_item:first-of-type h1::before {
+    top: -45%;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+  body .container main .section_six .section_six_item:last-of-type {
+    padding: 60px 60px 40px 40px;
+  }
+}
+@media screen and (max-width: 675px) {
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_six {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  body .container main .section_six .section_six_item:first-of-type {
+    text-align: center;
+  }
+  body .container main .section_six .section_six_item:first-of-type h1::before {
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .container main .section_six .section_six_item:first-of-type a {
+    justify-content: center;
+  }
+  body .container main .section_six .section_six_item:first-of-type a:not(:first-of-type) {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_scores {
+    width: 100%;
+  }
+  body .container main .section_two {
+    padding: 5px 6%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_three {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  body .container main .section_one {
+    padding-bottom: 24px;
+  }
+  body .container main .section_three h1 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_three h1::before {
+    font-size: 14px;
+  }
+  body .container main .section_three .section_three_row {
+    grid-template-columns: 1fr;
+  }
+  body .container main .section_three .section_three_row .section_three_row_col {
+    text-align: center;
+  }
+  body .container main .section_three .section_three_row .section_three_row_col span {
+    margin: auto;
+  }
+  body .container main .section_three .section_three_row .section_three_row_col p {
+    text-align: center;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  body .container main .section_five h1 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+  body .container main .section_five h1:before {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  body .container main .section_five .section_five_row {
+    grid-template-columns: repeat(3, 476px);
+    gap: 20px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col {
+    padding: 28px 40px;
+    height: 378px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col:nth-of-type(2) {
+    width: 468px;
+    height: 406px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .container main .section_five h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  body .container main .section_five h1:before {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  body .container main .section_five p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  body .container main .section_five .section_five_row {
+    grid-template-columns: repeat(3, 320px);
+    gap: 20px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col {
+    padding: 28px 40px;
+    height: 400px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col:nth-of-type(2) {
+    width: 320px;
+    height: 436px;
+  }
+  body .container main .section_five .section_five_row .section_five_row_col p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2::before {
+    font-size: 14px;
+    top: -60%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2::before {
+    font-size: 14px;
+    top: -150%;
+  }
+}
+@media screen and (max-width: 435px) {
+  body .container main .section_one .section_one_item_2 {
+    display: none;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) {
+    align-items: flex-end;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1 {
+    margin-top: 120px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1::before {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(2) svg {
+    width: 38px;
+    height: 38px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) {
+    grid-template-columns: repeat(3, 310px);
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child .section_four_item_child_image {
+    width: 100%;
+    height: 400px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child .section_four_item_child_image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child h3 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(2) .section_four_item_child a {
+    font-size: 14px;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  body .container main .section_one .section_one_item_top .section_one_item h1 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item p br {
+    display: none;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started {
+    flex-direction: column;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(1) {
+    padding: 12px;
+    font-size: 16px;
+    line-height: unset;
+  }
+  body .container main .section_one .section_one_item_top .section_one_item .section_one_item_started .section_one_item_started_child:nth-of-type(2) {
+    padding: 12px;
+    font-size: 16px;
+    line-height: unset;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(1) h1 {
+    font-size: 18px;
+  }
+  body .container main .section_four .section_four_item:nth-of-type(1) .section_four_item_child:nth-of-type(2) svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 340px) {
+  body .container main br {
+    display: none;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2::before {
+    font-size: 14px;
+    top: -60%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) p {
+    font-size: 16px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2::before {
+    font-size: 14px;
+    top: -150%;
+    padding: 10px 13px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) p {
+    font-size: 16px;
+  }
+  body .container main .section_three h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  body .container main .section_three h1::before {
+    top: -70%;
+    font-size: 10px;
+  }
+  body .container main .section_three p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 325px) {
+  body .container main .section_six .section_six_item:first-of-type h1 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 0;
+  }
+  body .container main .section_six .section_six_item:first-of-type h1::before {
+    font-size: 10px;
+    padding: 5px 12px;
+  }
+  body .container main .section_six .section_six_item:first-of-type p {
+    font-size: 14px;
+  }
+  body .container main .section_six .section_six_item:first-of-type a:nth-of-type(1) {
+    align-items: flex-start;
+    gap: 3px;
+  }
+  body .container main .section_six .section_six_item:last-of-type form button {
+    margin-top: 23px;
+    padding: 2px 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(1) .section_two_item_child:nth-of-type(2) h2::before {
+    font-size: 14px;
+    top: -60%;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) h2::before {
+    width: 150px;
+    top: -250%;
+  }
+}
+body .container footer {
+  border: inherit;
+  padding: 82px 0;
+  background: #101c26;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 6%;
+  margin-bottom: 57px;
+  border-bottom: 1px solid #989898;
+}
+body .container footer .footer_item h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f5f5f5;
+}
+body .container footer .footer_item a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b3b3b3;
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.4s;
+  position: relative;
+}
+body .container footer .footer_item a:not(:first-of-type) {
+  margin-top: 14px;
+}
+body .container footer .footer_item a::before {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background-color: #f7f289;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: all 0.4s;
+}
+body .container footer .footer_item a:hover {
+  color: #f7f289;
+}
+body .container footer .footer_item a:hover::before {
+  width: 100%;
+}
+body .container footer .footer_item:not(:first-of-type) {
+  justify-self: center;
+}
+body .container footer .footer_item:nth-of-type(1) img {
+  width: 97px;
+  height: 67px;
+}
+body .container footer .footer_item:nth-of-type(1) p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f5f5f5;
+}
+body .container footer .footer_item:nth-of-type(1) .footer_item_social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+body .container footer .footer_item:nth-of-type(1) .footer_item_social span {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #f0e714;
+  border: 1.5px solid #f7f289;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+body .container footer .footer_item:nth-of-type(1) .footer_item_social span svg path {
+  transition: all 0.4s;
+}
+body .container footer .footer_item:nth-of-type(1) .footer_item_social span:hover {
+  background-color: #101c26;
+}
+body .container footer .footer_item:nth-of-type(1) .footer_item_social span:hover svg path {
+  fill: #f7f289;
+}
+@media screen and (max-width: 920px) {
+  body .container footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  body .container footer .footer_item:not(:first-of-type) {
+    justify-self: flex-start;
+  }
+}
+@media screen and (max-width: 660px) {
+  body .container footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  body .container footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container {
+    width: 1440px;
+  }
+  body .container header {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 1440px;
+  }
+}/*# sourceMappingURL=style.css.map */
