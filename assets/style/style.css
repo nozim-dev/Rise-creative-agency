@@ -1052,7 +1052,6 @@ body .container main .section_six .section_six_item:last-of-type form button:hov
     line-height: 46px;
   }
   body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) .section_two_item_child_block .section_two_item_child_block_item span {
-    border: 2px solid red;
     min-width: 68px;
     min-height: 68px;
   }
@@ -1080,7 +1079,6 @@ body .container main .section_six .section_six_item:last-of-type form button:hov
     top: -80%;
   }
   body .container main .section_two .section_two_item:nth-of-type(2) .section_two_item_child:nth-of-type(1) .section_two_item_child_block .section_two_item_child_block_item span {
-    border: 2px solid red;
     min-width: 68px;
     min-height: 68px;
   }
